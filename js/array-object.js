@@ -19,7 +19,7 @@ let isSubscribed = true;
  /*
      4 - A variável student abaixo é de que tipo de dados?
          Objeto
-
+dsd
      4.1 - Atribua a ela as mesmas propriedade e valores do exercício 3.
          
 
