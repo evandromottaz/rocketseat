@@ -15,7 +15,7 @@ function gastos(restante) {
     let entrada
     restante = [
         entrada = {
-            leticia:2500,
+            leticia:2800,
             evandro:2300
         },
         saida = {
