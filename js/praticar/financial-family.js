@@ -3,27 +3,32 @@
 */
 
 /*
-    Trannsformar notas escolares
+    Crie um objeto que possuirá 2 propriedades, ambas do tipo array:
+        receitas: []
+        despesas: []
 
-    Crie um algoritimo que transforme as notas do sistema numérico para sistema de notas em caracteres tipo A B C
-
-    de 90 para cima -   A
-    entre 80 - 89 -     B
-    entre 70 - 79 -     C
-    entre 60 - 69 -     D
-    menor que 60 -      F
+    Agora, crie uma função que irá calcular o total de receitas e despesas e irá mostrar uma mensagem se a família está com saldo positivo ou negativo, seguido do valor do saldo
 */
+let restante
 
-let notaFinal = 98
+function gastos(restante) {
+    let entrada
+    restante = [
+        entrada = {
+            leticia:2500,
+            evandro:2300
+        },
+        saida = {
+            agua:20,
+            luz:120,
+            comida: 900,
+            outrasDespesas: 1500,
+            aluguel: 720
+        }
+    ]
 
-if(notaFinal >= 90) {
-    console.log('A')
-} else if(notaFinal >= 80 && notaFinal <= 89){
-    console.log('B')
-} else if(notaFinal >= 70 && notaFinal <= 79){
-    console.log('C')
-} else if(notaFinal >= 60 && notaFinal <= 69){
-    console.log('D')
-} else {
-    console.log('F')
-} 
+    entrada = entrada.leticia + entrada.evandro
+    saida = saida.agua + saida.luz + saida.comida + saida.outrasDespesas + saida.aluguel
+    restante = entrada - saida
+    console.log('No mês de abril o restante foi de: ' + restante)
+}

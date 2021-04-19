@@ -14,7 +14,7 @@
     menor que 60 -      F
 */
 
-let notaFinal = 98
+let notaFinal = 70
 
 if(notaFinal >= 90) {
     console.log('A')
