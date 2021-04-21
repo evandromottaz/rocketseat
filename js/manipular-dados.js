@@ -58,7 +58,11 @@ let myArray = textSpace.split(' ') //split separa por 'x'
 let phraseWithUnderscore = myArray.join("_") //join junta uma string
 console.log(phraseWithUnderscore.toLowerCase())
 
-//Manipulado Arrays -------------
+
+
+
+
+                                    //Manipulado Arrays -------------
 
 //Criar Array com construtor
 let myArray2 = new Array('a','b','c')

@@ -18,6 +18,7 @@ function gastos(restante) {
             leticia:2800,
             evandro:2300
         },
+        
         saida = {
             agua:20,
             luz:120,
@@ -30,5 +31,35 @@ function gastos(restante) {
     entrada = entrada.leticia + entrada.evandro
     saida = saida.agua + saida.luz + saida.comida + saida.outrasDespesas + saida.aluguel
     restante = entrada - saida
-    console.log('No mês de abril o restante foi de: ' + restante)
+    
+    console.log(`No mês de abril o restante foi de: ' + ${restante}`)
+}
+
+// CORREÇÃO
+let family = {
+    incomes: [2800,2300],
+    expenses: [20,120,900,1500,720]
+}
+
+function sum(array) {
+    let total = 0
+    //calculo de soma de array
+    for(let value of array) {
+        total += value
+    }
+    return total
+}
+
+function calculateBalance() {
+    let calculateIncomes = sum(family.incomes)
+    let calculateExpenses = sum(family.expenses)
+
+    let total = calculateIncomes - calculateExpenses
+
+    let balanceText = 'negativo'
+    if(total >= 0){
+        balanceText = 'positivo'
+    }
+
+    console.log(`Seu saldo é ${balanceText}: ${total}`)
 }
